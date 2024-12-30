@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cal " style=" height: 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40PX;
+   
+    ">Calculator</div>
+  <div class="calculater">
+    
+    <div class="inner">
+        <input type="text" readonly id="inputs">
+    <br>
+    <div class="box">
+        <button class="button" onclick="
+        clicks='';
+        document.querySelector('#inputs').value= clicks;">c</button>
+    <button class="button" onclick="
+    clicks=clicks + '1';
+    document.querySelector('#inputs').value= clicks;">1</button>
+    <button class="button" onclick="
+    clicks=clicks + '2';
+    document.querySelector('#inputs').value= clicks;">2</button>
+    <button class="button" onclick="
+    clicks=clicks + '+';
+    document.querySelector('#inputs').value= clicks;">+</button>
+    <button class="button" onclick="
+    clicks=clicks + '3';
+    document.querySelector('#inputs').value= clicks;">3</button>
+    <button class="button" onclick="
+    clicks=clicks + '4';
+    document.querySelector('#inputs').value= clicks;">4</button>
+    <button class="button" onclick="
+    clicks=clicks + '-';
+    document.querySelector('#inputs').value= clicks;">-</button>
+    <button class="button" onclick="
+    clicks=clicks + '5';
+    document.querySelector('#inputs').value= clicks;">5</button>
+    <button class="button" onclick="
+    clicks=clicks + '6';
+    document.querySelector('#inputs').value= clicks;">6</button>
+    <button class="button"
+    onclick="
+    clicks=clicks + '*';
+    document.querySelector('#inputs').value= clicks;">*</button>
+    <button class="button"onclick="
+    clicks=clicks + '7';
+    document.querySelector('#inputs').value= clicks;">7</button>
+    <button class="button" onclick="
+    clicks=clicks + '8';
+    document.querySelector('#inputs').value= clicks;">8</button>
+    <button class="button" onclick="
+    clicks=clicks + '/';
+    document.querySelector('#inputs').value= clicks;">/</button>
+    <button class="button" onclick="
+    let result=eval(clicks);
+    clicks=result;
+    document.querySelector('#inputs').value= clicks;">=</button>
+    <button class="button" onclick="
+    clicks=clicks + '9';
+    document.querySelector('#inputs').value= clicks;">9</button>
+    <button class="button" onclick="
+    clicks=clicks + '0';
+    document.querySelector('#inputs').value= clicks;">0</button>
+    <button class="button" onclick="
+    clicks=clicks + '.';
+    document.querySelector('#inputs').value= clicks;">.</button>
+     <button class="button" onclick="
+     clicks=clicks + '%';
+     document.querySelector('#inputs').value= clicks;">%</button>
+     
+    </div>
+    </div>
+  </div>
+  <script>
+    let clicks = '';
+    document.querySelector('#inputs').value= clicks;
+  </script>  
+</body>
+</html>
